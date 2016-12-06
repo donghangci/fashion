@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myapp'>
+<head>
+    <meta charset="UTF-8">
+    <title>服装</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>    
+<body>
+    <div id="wrap" ng-controller='wrap'>
+    	<header>
+			<a href="#" id='saoma'></a>
+			<h1>{{msg}}</h1>
+			<a href="#" id='search'></a>
+		</header>
+    	<div class="main">
+            <div class="home">
+                <div class="banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                            <div class="swiper-slide"><img src="./images/banner.png"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class='pic' ng-controller='pic'>
+                       <a href="#" ng-repeat="i in arr">
+                           <img src="{{i.img}}"/>
+                           <h2 id='clothes_info'>{{i.tit}}</h2>
+                           <p><span><i class='fa fa-yen'></i>{{i.money}}</span><span><i class='fa fa-heart-o'></i>{{i.xin}}</span></p>
+                       </a>
+                    </div>
+                    <div class='pic' ng-controller='pic'>
+                       <a href="#" ng-repeat="i in arr2">
+                           <img src="{{i.img}}"/>
+                           <h2 id='clothes_info'>{{i.tit}}</h2>
+                           <p><span><i class='fa fa-yen'></i>{{i.money}}</span><span><i class='fa fa-heart-o'></i>{{i.xin}}</span></p>
+                       </a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    	<footer>
+            <a href="#" class='on' data-tit='首页'><i class='fa fa-home'></i><br>首页</a>
+            <a href="#" data-tit='S秀'><i class='fa fa-strikethrough'></i><br>S秀</a>
+            <a href="#" data-tit='逛街'><i class='fa fa-reorder'></i><br>逛街</a>
+            <a href="#" data-tit='购物车'><i class='fa fa-shopping-cart'></i><br>购物车</a>
+            <a href="#" data-tit='我的'><i class='fa fa-user'></i><br>我的</a>
+        </footer>
+    </div>
+</body>
+<script src='../../../bower_components/angular/angular.min.js'></script>
+<script src='./js/app.js'></script>
+<script src='./js/controller.js'></script>
+<script src='./js/zepto.min .js'></script>
+<script src='./js/swiper-3.3.1.min.js'></script>
+<script>
+    var swiper=new Swiper(".swiper-container",{
+            pagination:".swiper-pagination",
+            slidesPerView:'auto',
+            autoplay:2000,
+            mode:'horizontal',
+            watchActiveIndex:true,
+    })
+</script>
+</html>

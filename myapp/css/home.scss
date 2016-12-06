@@ -1,0 +1,51 @@
+.home{
+	width:100%;		
+	.banner{
+		width:100%;
+		padding:.1rem;
+		img{
+			display:block;
+			width:100%;
+		}
+	}
+	.content{
+		width:100%;
+		display:-webkit-box;
+		div{
+			-webkit-box-flex:1;
+			margin-left:.1rem;
+			a{
+	    		width:100%;
+	    		border:1px solid #ccc;
+	    		border-radius:10px;
+	    		background:#fff;
+	    		margin-bottom:.1rem;
+	    		display:block;
+	    		color:#666;
+	    		img{
+	    			width:100%;
+	    			display:block;
+	    		}
+	    		#clothes_info{
+					overflow : hidden;
+					white-space : nowrap;
+					text-overflow : ellipsis;
+					font-size:.14rem;
+					line-height:.3rem;
+					padding-left:.1rem;
+				}
+				p{
+					font-size: .14rem;
+				   	padding: 0 0 .1rem .1rem;
+				   	span{
+				   		margin-right:.1rem;
+				   		i{
+				   			color:#ff6599;
+				   			margin-right:.05rem;
+				   		}
+				   }
+	    		}
+	    	}
+		}
+	}
+}

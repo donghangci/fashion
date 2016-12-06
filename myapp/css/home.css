@@ -1,0 +1,42 @@
+.home {
+  width: 100%; }
+  .home .banner {
+    width: 100%;
+    padding: .1rem; }
+    .home .banner img {
+      display: block;
+      width: 100%; }
+  .home .content {
+    width: 100%;
+    display: -webkit-box; }
+    .home .content div {
+      -webkit-box-flex: 1;
+      margin-left: .1rem; }
+      .home .content div a {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #fff;
+        margin-bottom: .1rem;
+        display: block;
+        color: #666; }
+        .home .content div a img {
+          width: 100%;
+          display: block; }
+        .home .content div a #clothes_info {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: .14rem;
+          line-height: .3rem;
+          padding-left: .1rem; }
+        .home .content div a p {
+          font-size: .14rem;
+          padding: 0 0 .1rem .1rem; }
+          .home .content div a p span {
+            margin-right: .1rem; }
+            .home .content div a p span i {
+              color: #ff6599;
+              margin-right: .05rem; }
+
+/*# sourceMappingURL=home.css.map */

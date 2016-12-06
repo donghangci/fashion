@@ -1,0 +1,1 @@
+angular.module('myapp',[]);//定义入口 
